@@ -283,12 +283,12 @@ button {
     background-size: cover;
     background-position: center;
     width: 50%;
-    height: 880px;
+    height: 750px;
+    flex-shrink: 0;
 }
 
 .promo {
     display: flex;
-    flex-direction: row;
 }
 
 .promo__right{
@@ -299,17 +299,23 @@ button {
 }
 
 .promo__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
     background-color: white;
     padding: 30px 40px 30px 40px;
     font-size: 20px;
     line-height: 22px;
     font-weight: 500;
-    border-radius: 25px;    
+    border-radius: 25px;
 }
 .promo__card p{
+    
     opacity: 80%;
 }
 .promo__card button{
+    align-self: center;
     background-color: #107b1c;
     margin-top: 20px;
     font-size: 18px;
